@@ -1,0 +1,322 @@
+2022.07.06 19:48:54 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at e:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\.metals\lsp.trace.json or C:\Users\dell\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.07.06 19:48:55 INFO  logging to file E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\.metals\metals.log
+2022.07.06 19:48:55 INFO  Started: Metals version 0.11.7 in workspace 'E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02' for client Visual Studio Code 1.68.1.
+2022.07.06 19:48:56 INFO  time: initialize in 1.05s
+2022.07.06 19:48:56 WARN  Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.07.06 19:48:56 WARN  Build server is not auto-connectable.
+2022.07.06 19:48:56 WARN  no build tool detected in workspace 'E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.07.06 19:48:59 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:49:03 INFO  no build target found for E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala. Using presentation compiler with project's scala-library version: 3.1.3
+2022.07.06 19:49:05 INFO  time: code lens generation in 6.19s
+2022.07.06 19:49:05 INFO  time: code lens generation in 6.18s
+Jul 06, 2022 7:50:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 16 is not a valid line number, allowed [0..3]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:66)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:65)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:65)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1652)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1651)
+	... 16 more
+
+2022.07.06 19:50:08 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+Jul 06, 2022 7:50:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 16 is not a valid line number, allowed [0..3]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:66)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:65)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:65)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1652)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1651)
+	... 16 more
+
+2022.07.06 19:51:17 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:51:21 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+Jul 06, 2022 7:51:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 20 is not a valid line number, allowed [0..3]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:66)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:65)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:65)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1652)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1651)
+	... 16 more
+
+Jul 06, 2022 7:51:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 19 is not a valid line number, allowed [0..3]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:66)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:65)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:65)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1652)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1651)
+	... 16 more
+
+Jul 06, 2022 7:51:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 9 is not a valid line number, allowed [0..3]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:66)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:65)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:65)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1652)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1651)
+	... 16 more
+
+Jul 06, 2022 7:51:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 8 is not a valid line number, allowed [0..3]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:66)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:65)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:65)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1652)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1651)
+	... 16 more
+
+2022.07.06 19:51:30 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:51:33 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:51:38 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:51:42 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:51:43 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:51:46 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:51:47 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:51:51 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:51:53 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:51:55 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:52:04 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:52:09 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:52:11 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:52:13 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:52:17 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:52:23 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:52:25 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:52:32 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:52:44 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:52:48 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:52:50 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:52:56 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:52:58 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:52:59 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:53:00 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:53:02 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:53:05 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:53:07 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:53:09 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:53:10 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:53:12 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:53:20 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:53:21 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:53:24 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:53:25 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:53:27 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:53:30 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:53:34 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_01_02.scala
+2022.07.06 19:54:50 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_03.scala
+2022.07.06 19:55:16 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_03.scala
+2022.07.06 19:55:19 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_03.scala
+2022.07.06 19:55:27 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_03.scala
+2022.07.06 19:55:29 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_03.scala
+2022.07.06 19:55:31 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_03.scala
+2022.07.06 19:56:27 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_04(a).scala
+2022.07.06 19:56:48 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_04(a).scala
+2022.07.06 19:56:51 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_04(a).scala
+2022.07.06 19:56:54 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_04(a).scala
+2022.07.06 19:56:54 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_04(a).scala
+2022.07.06 19:57:43 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_04(a).scala
+2022.07.06 19:57:44 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_04(a).scala
+2022.07.06 19:57:48 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_04(a).scala
+2022.07.06 19:57:58 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_04(a).scala
+2022.07.06 19:58:59 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_04(b).scala
+2022.07.06 19:59:29 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_04(b).scala
+2022.07.06 19:59:31 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_04(b).scala
+2022.07.06 19:59:40 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_04(b).scala
+2022.07.06 19:59:42 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_04(b).scala
+2022.07.06 19:59:44 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_04(b).scala
+2022.07.06 19:59:49 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_04(b).scala
+2022.07.06 19:59:49 WARN  no build target for: E:\Computer Science - UCSC\Second Year\Sem 1 - Functional Programming\Practical Sessions\Week 02\Scala Tutorial 02\question_04(b).scala
+2022.07.06 20:12:20 INFO  shutting down Metals
